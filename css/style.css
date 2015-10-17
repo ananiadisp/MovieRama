@@ -1,0 +1,244 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.row, .col {
+	overflow: hidden;
+	position: absolute;
+}
+
+.row {
+	left: 0;
+	right: 0;
+}
+
+.header.row {
+	height: 30px;
+	top: 0;
+	background-color: #0E1814;
+	color: white;
+}
+
+.body.row {
+	top: 30px;
+	bottom: 0px;
+	background-color: blue;
+}
+
+.left.col {
+	width: 150px;
+	height: 100%;
+	background-color: #2D5445;
+}
+
+.right.col {
+	left: 150px;
+	right: 0;
+	height: 100%;
+	background-color: #7C6443;
+}
+
+.profile-pic{
+	margin: auto;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	background-image: url("http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg");
+	background-size: cover;
+}
+
+.left.col p{
+	text-align: center;;
+}
+
+.friend-activity{
+	display: block;
+	position: absolute;
+	height: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 40px;
+	width: calc(55% - 40px);
+	width: -moz-calc(55% - 40px);
+	width: -webkit-calc(610px);
+	width: -o-calc(55% - 40px);
+	background-color: #2E404F;
+	color: white;
+	text-align: center;
+}
+
+.friend-activity #title {
+	display: block;
+	height: 30px;
+	background-color: rgba(0,0,0,0.3);
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+.latest-movies{
+	display: block;
+	position: absolute;
+	height: auto;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: 40px;
+	width: calc(45% - 80px);
+	width: -moz-calc(45% - 80px);
+	width: -webkit-calc(45% - 80px);
+	width: -o-calc(45% - 80px);
+	background-color: #2E404F;
+	color: white;
+	text-align: center;
+}
+
+.fmovies-cont{
+	width: 100%;
+	max-height: 799px;
+	overflow: overlay;
+}
+.fmovies-table {
+	/*display: table;*/
+	width: 100%;
+	/*border-collapse: separate;*/
+	/*border-spacing: 7px;*/
+	/*overflow: auto;*/
+}
+
+.fmovies-row {
+	/*display: table-row;*/
+    height: 390px;
+	display: block;
+	margin: 10px;
+	
+}
+
+.fmovies30 {
+	/*display: table-cell;*/
+	/*float: left;*/
+	position: relative;
+	/*display: inline-block;*/
+    height: 390px;
+    width: 190px;
+	/*border-style: solid;*/
+	/*border-width: 1px;*/
+}
+
+.fmovies60 {
+	/*display: table-cell;*/
+	/*float: right;*/
+	position: relative;
+	/*display: inline-block;*/
+	height: 390px;
+	width: 390px;
+	/*border-style: solid;*/
+	/*border-width: 1px;*/
+}
+
+.movie1{
+	background-image: url("../img/fear&loathing_big.jpg");
+	background-size: cover;
+}
+
+.movie2{
+	background-image: url("../img/New_Kids_Nitro_big.jpg");
+	background-size: cover;
+	/*background-position: center;*/
+}
+.movie3{
+	background-image: url("../img/mprofile-pic.jpg");
+	background-size: cover;
+}
+
+.fmovieshor {
+	height: 190px;
+}
+
+.fmoviever {
+	height: 390px;
+	
+}
+
+.floatleft
+{
+	float: left;
+}
+
+.floatright{
+	float: right;
+}
+
+.moviehortop{
+	margin-bottom: 10px
+}
+
+.moviehorbot{
+
+}
+
+.movieverleft{
+margin-right: 10px;
+}
+
+.movieverright{
+margin-left: 10px;
+}
+
+.vertical-like-overlay{
+    background-color: rgba(54, 153, 54, 0.7);
+    padding: 10px 0 0 10px;
+    width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-right: 100px solid transparent;
+}
+
+.vertical-hate-overlay{
+	width: 180px;
+    height: 180px;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px 0 0 10px;
+}
+
+.horiz-like-overlay{
+	width: 190px;
+    height: 190px;
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.horiz-hate-overlay{
+	width: 190px;
+    height: 190px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.user-activity{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-image: url("../img/austin-carr-profile.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-right: 100px solid transparent;
+}
