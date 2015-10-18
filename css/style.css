@@ -1,189 +1,203 @@
 html, body {
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-	height: 100%;
-	width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 100%;
+    width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
-	font-weight: normal;
-	font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: Mohave;
+    src: url(../fonts/Mohave.otf);
+}
+
+p{
+    font-family: Mohave;
 }
 
 .row, .col {
-	overflow: hidden;
-	position: absolute;
+    overflow: hidden;
+    position: absolute;
 }
 
 .row {
-	left: 0;
-	right: 0;
+    left: 0;
+    right: 0;
 }
 
 .header.row {
-	height: 30px;
-	top: 0;
-	background-color: #0E1814;
-	color: white;
+    height: 30px;
+    top: 0;
+    background-color: #0E1814;
+    color: white;
 }
 
 .body.row {
-	top: 30px;
-	bottom: 0px;
-	background-color: blue;
+    top: 30px;
+    bottom: 0px;
+    background-color: blue;
 }
 
 .left.col {
-	width: 150px;
-	height: 100%;
-	background-color: #2D5445;
+    width: 150px;
+    height: 100%;
+    background-color: #2D5445;
 }
 
 .right.col {
-	left: 150px;
-	right: 0;
-	height: 100%;
-	background-color: #7C6443;
+    left: 150px;
+    right: 0;
+    height: 100%;
+    background-color: #7C6443;
 }
 
 .profile-pic{
-	margin: auto;
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	background-color: blue;
-	background-image: url("http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg");
-	background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    background-image: url("http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg");
+    background-size: cover;
 }
 
 .left.col p{
-	text-align: center;;
+    text-align: center;;
 }
 
 .friend-activity{
-	display: block;
-	position: absolute;
-	height: auto;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin: 40px;
-	width: calc(55% - 40px);
-	width: -moz-calc(55% - 40px);
-	width: -webkit-calc(610px);
-	width: -o-calc(55% - 40px);
-	background-color: #2E404F;
-	color: white;
-	text-align: center;
+    float: left;
+    display: block;
+    position: relative;
+    height: 830px;
+    width: 610px;
+    background-color: #2E404F;
+    color: white;
+    text-align: center;
 }
 
-.friend-activity #title {
-	display: block;
-	height: 30px;
-	background-color: rgba(0,0,0,0.3);
-	line-height: 30px;
-	vertical-align: middle;
+#title {
+    display: block;
+    height: 30px;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 30px;
+    vertical-align: middle;
 }
 
 .latest-movies{
-	display: block;
-	position: absolute;
-	height: auto;
-	top: 0px;
-	bottom: 0px;
-	right: 0px;
-	margin: 40px;
-	width: calc(45% - 80px);
-	width: -moz-calc(45% - 80px);
-	width: -webkit-calc(45% - 80px);
-	width: -o-calc(45% - 80px);
-	background-color: #2E404F;
-	color: white;
-	text-align: center;
+    float: right;
+    display: block;
+    position: relative;
+    height: 830px;
+    width: 410px;
+    background-color: #2E404F;
+    color: white;
+    text-align: center;
 }
 
 .fmovies-cont{
-	width: 100%;
-	max-height: 799px;
-	overflow: overlay;
+    width: 100%;
+    max-height: 799px;
+    overflow: overlay;
 }
 .fmovies-table {
-	/*display: table;*/
-	width: 100%;
-	/*border-collapse: separate;*/
-	/*border-spacing: 7px;*/
-	/*overflow: auto;*/
+    /*display: table;*/
+    width: 100%;
+    /*border-collapse: separate;*/
+    /*border-spacing: 7px;*/
+    /*overflow: auto;*/
 }
 
 .fmovies-row {
-	/*display: table-row;*/
+    /*display: table-row;*/
     height: 390px;
-	display: block;
-	margin: 10px;
-	
+    display: block;
+    margin: 10px;
+    
 }
 
 .fmovies30 {
-	/*display: table-cell;*/
-	/*float: left;*/
-	position: relative;
-	/*display: inline-block;*/
+    /*display: table-cell;*/
+    /*float: left;*/
+    position: relative;
+    /*display: inline-block;*/
     height: 390px;
     width: 190px;
-	/*border-style: solid;*/
-	/*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
 }
 
 .fmovies60 {
-	/*display: table-cell;*/
-	/*float: right;*/
-	position: relative;
-	/*display: inline-block;*/
-	height: 390px;
-	width: 390px;
-	/*border-style: solid;*/
-	/*border-width: 1px;*/
+    /*display: table-cell;*/
+    /*float: right;*/
+    position: relative;
+    /*display: inline-block;*/
+    height: 390px;
+    width: 390px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
 }
 
 .movie1{
-	background-image: url("../img/fear&loathing_big.jpg");
-	background-size: cover;
+    background-image: url("../img/fear_loathing_poster.jpg");
+    background-size: cover;
 }
 
 .movie2{
-	background-image: url("../img/New_Kids_Nitro_big.jpg");
-	background-size: cover;
-	/*background-position: center;*/
+    background-image: url("../img/New_Kids_Nitro_big.jpg");
+    background-size: cover;
+    /*background-position: center;*/
 }
 .movie3{
-	background-image: url("../img/mprofile-pic.jpg");
-	background-size: cover;
+    background-image: url("../img/pi_poster.jpg");
+    background-size: cover;
+}
+
+.movie4{
+    background-image: url("../img/dumb_poster.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.movie5{
+    background-image: url("../img/naked_gun_poster.jpg");
+    background-size: cover;
+}
+
+.movie6{
+    background-image: url("../img/dog_poster.jpg");
+    background-size: cover;
 }
 
 .fmovieshor {
-	height: 190px;
+    height: 190px;
+    overflow: hidden;
 }
 
 .fmoviever {
-	height: 390px;
-	
+    height: 390px;
+    overflow: hidden;
+    
 }
 
 .floatleft
 {
-	float: left;
+    float: left;
 }
 
 .floatright{
-	float: right;
+    float: right;
 }
 
 .moviehortop{
-	margin-bottom: 10px
+    margin-bottom: 10px
 }
 
 .moviehorbot{
@@ -199,46 +213,235 @@ margin-left: 10px;
 }
 
 .vertical-like-overlay{
-    background-color: rgba(54, 153, 54, 0.7);
-    padding: 10px 0 0 10px;
+    /*background-color: rgba(54, 153, 54, 0.7);*/
+    /*padding: 10px 0 0 10px;*/
     width: 0;
-	height: 0;
-	border-top: 100px solid red;
-	border-right: 100px solid transparent;
+    height: 0;
+    border-top: 190px solid rgba(54, 153, 54, 0.9);
+    border-right: 190px solid transparent;
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
+    -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
 
 .vertical-hate-overlay{
-	width: 180px;
-    height: 180px;
-    background-color: rgba(255, 0, 0, 0.5);
-    padding: 10px 0 0 10px;
+    width: 0;
+    height: 0;
+    border-top: 190px solid rgba(255, 0, 0, 0.9);
+    border-right: 190px solid transparent;
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
+    -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
 
 .horiz-like-overlay{
-	width: 190px;
-    height: 190px;
-    background-color: rgba(0, 255, 0, 0.5);
+    width: 0px;
+    height: 0px;
+    border-top: 190px solid rgba(54, 153, 54, 0.9);
+    border-right: 190px solid transparent;
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
+    -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
+}
+
+.vertical-like-overlay p{
+    height: 120px;
+    padding-top: 80px;
 }
 
 .horiz-hate-overlay{
-	width: 190px;
-    height: 190px;
-    background-color: rgba(255, 0, 0, 0.5);
+    width: 0px;
+    height: 0px;
+    border-top: 190px solid rgba(255, 0, 0, 0.6);
+    border-right: 190px solid transparent;
+    filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
+    -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
 
 .user-activity{
-	display: inline-block;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	background-image: url("../img/austin-carr-profile.jpg");
-	background-size: cover;
-	float: left;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/austin-carr-profile.jpg");
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .triangle-topleft {
-	width: 0;
-	height: 0;
-	border-top: 100px solid red;
-	border-right: 100px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
 }
+
+.latest-movies-content{
+    position: relative;
+    width: 410px;
+    height: 800px;
+    /*margin: 10px;*/
+}
+
+.right-col-wraper{
+    position: absolute;
+    width: 1060px;
+    height: 1000px;
+    padding: 44px;
+}
+
+.latest-movies-table{
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+td{
+    background-color: red;
+    position: relative;
+}
+
+.latest-1{
+    background-image: url("../img/trainspotting_latest.jpg");
+    background-size: cover;
+}
+
+
+.latest-2{
+    background-image: url("../img/zoolander_latest.jpg");
+    background-size: cover;
+}
+
+.latest-3{
+    background-image: url("../img/New_Kids_turbo_latest.jpg");
+    background-size: cover;
+}
+
+.latest-4{
+    background-image: url("../img/bourne_ultimatum_latest.jpg");
+    background-size: cover;
+}
+
+.latest-5{
+    background-image: url("../img/ex-machina_latest.jpg");
+    background-size: cover;
+}
+
+.movie-title-like{
+    position: absolute;
+    width: 190px;
+    height: 80px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(54, 153, 54, 0.7);
+    line-height: 80px;
+    font-size: 22px;
+}
+
+.movie-title-hate{
+    position: absolute;
+    width: 190px;
+    height: 80px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(155, 50, 50, 0.7);
+    line-height: 90px;
+    font-size: 22px;
+}
+
+#overlay{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0px;*/
+    height: 110px;
+    width: 310px;
+    background: rgba(0,0,0,.75);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity .45s ease;
+    -moz-transition: opacity .45s ease;
+    box-shadow: none;
+    padding: 40px;
+    line-height: 70px;
+    font-size: 30px;
+    margin-top: -190px;
+}
+
+
+.horiz-hate-overlay:hover #overlay{
+    opacity: 1;
+}
+
+.horiz-like-overlay:hover #overlay{
+    opacity: 1;
+}
+
+#overlay-hor{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0px;*/
+    height: 350px;
+    width: 150px;
+    background: rgba(0,0,0,.75);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity .45s ease;
+    -moz-transition: opacity .45s ease;
+    box-shadow: none;
+    padding: 20px;
+    /*line-height: 10px;*/
+    font-size: 30px;
+    margin-top: -190px;
+}
+
+.vertical-like-overlay:hover #overlay-hor{
+    opacity: 1;
+}
+
+.add_watchlist {
+    display: inline-block;
+    width: calc(50% - 10px);
+    height: 50px;
+    background-image: url("../img/watchlist.png") ;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 100%; 
+    margin-right: 10px;
+    float: left;
+}
+
+.add_to_movies {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    background-image: url("../img/add-to-movies.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(34,47,58,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(34,47,58,0.4); 
+}
+
+/*End of Scroll Bar*/
+
