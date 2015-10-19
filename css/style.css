@@ -22,8 +22,13 @@ p{
     font-family: Mohave;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .row, .col {
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
 }
 
@@ -33,10 +38,11 @@ p{
 }
 
 .header.row {
-    height: 30px;
+    height: 80px;
     top: 0;
-    background-color: #0E1814;
+    background-color: #667A61;
     color: white;
+    overflow: hidden;
 }
 
 .body.row {
@@ -52,20 +58,30 @@ p{
 }
 
 .right.col {
-    left: 150px;
+    top: 80px;
+    left: 0px;
     right: 0;
-    height: 100%;
-    background-color: #7C6443;
+    background-color: #565952;
+    width: auto;
+    height: calc(100% - 105px);
+    padding-top: 25px;
 }
 
 .profile-pic{
-    margin: auto;
+    margin: 5px 10px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: blue;
     background-image: url("http://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg");
     background-size: cover;
+    float: left;
+}
+
+.header h2 {
+    float: right;
+    line-height: 80px;
+    margin-right: 80px;
 }
 
 .left.col p{
@@ -74,11 +90,9 @@ p{
 
 .friend-activity{
     float: left;
-    display: block;
-    position: relative;
     height: 830px;
     width: 610px;
-    background-color: #2E404F;
+    background-color: #444443;
     color: white;
     text-align: center;
 }
@@ -93,11 +107,9 @@ p{
 
 .latest-movies{
     float: right;
-    display: block;
-    position: relative;
     height: 830px;
     width: 410px;
-    background-color: #2E404F;
+    background-color: #444443;
     color: white;
     text-align: center;
 }
@@ -179,6 +191,7 @@ p{
 .fmovieshor {
     height: 190px;
     overflow: hidden;
+    position: inherit;
 }
 
 .fmoviever {
@@ -217,8 +230,8 @@ margin-left: 10px;
     /*padding: 10px 0 0 10px;*/
     width: 0;
     height: 0;
-    border-top: 190px solid rgba(54, 153, 54, 0.9);
-    border-right: 190px solid transparent;
+    border-top: 100px solid rgba(54, 153, 54, 0.9);
+    border-right: 110px solid transparent;
     filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
     -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
@@ -226,8 +239,8 @@ margin-left: 10px;
 .vertical-hate-overlay{
     width: 0;
     height: 0;
-    border-top: 190px solid rgba(255, 0, 0, 0.9);
-    border-right: 190px solid transparent;
+    border-top: 100px solid rgba(255, 0, 0, 0.9);
+    border-right: 110px solid transparent;
     filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
     -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
@@ -235,13 +248,13 @@ margin-left: 10px;
 .horiz-like-overlay{
     width: 0px;
     height: 0px;
-    border-top: 190px solid rgba(54, 153, 54, 0.9);
-    border-right: 190px solid transparent;
+    border-top: 100px solid rgba(54, 153, 54, 0.9);
+    border-right: 110px solid transparent;
     filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
     -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
 
-.vertical-like-overlay p{
+.fmoviever p{
     height: 120px;
     padding-top: 80px;
 }
@@ -249,13 +262,78 @@ margin-left: 10px;
 .horiz-hate-overlay{
     width: 0px;
     height: 0px;
-    border-top: 190px solid rgba(255, 0, 0, 0.6);
-    border-right: 190px solid transparent;
+    border-top: 100px solid rgba(255, 0, 0, 0.6);
+    border-right: 110px solid transparent;
     filter: drop-shadow(10px 5px 5px rgba(0,0,0,.45));
     -webkit-filter: drop-shadow(4px 5px 3px rgba(0,0,0,.45));
 }
 
-.user-activity{
+.movie1 .user-activity{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/austin-carr-profile.jpg");
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.movie2 .user-activity{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/austin-carr-profile.jpg");
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.movie3 .user-activity{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/austin-carr-profile.jpg");
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.movie4 .user-activity{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/austin-carr-profile.jpg");
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.movie5 .user-activity{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img/austin-carr-profile.jpg");
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.movie6 .user-activity{
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -275,18 +353,49 @@ margin-left: 10px;
     border-right: 100px solid transparent;
 }
 
-.latest-movies-content{
+.add_movie_content{
     position: relative;
     width: 410px;
     height: 800px;
-    /*margin: 10px;*/
+    background-image: url("../img/boyhood_poster.jpg");
+    background-size: cover;
+}
+
+.add_movie_overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 410px;
+    height: 800px;
+    font-size: 50px;
+}
+
+.add_movie_overlay p{
+    width: 410px;
+    height: 400px;
+    line-height: 400px;
+}
+
+.add_movie_overlay .submit{
+    width: 205px;
+    height: 400px;
+    float: left;
+}
+
+.add_movie_overlay .discard{
+    width: 205px;
+    height: 400px;
+    float: right;
+}
+
+.add_movie_overlay img{
+    width: 80px;
+    height: 80px;
+    margin-top: 150px;
 }
 
 .right-col-wraper{
-    position: absolute;
-    width: 1060px;
-    height: 1000px;
-    padding: 44px;
+    width: 1100px;
+    height: 830px;
+    margin: auto;
 }
 
 .latest-movies-table{
@@ -349,8 +458,8 @@ td{
     font-size: 22px;
 }
 
-#overlay{
-    /*position: absolute;*/
+#overlay-hor{
+    position: absolute;
     /*top: 0;*/
     /*left: 0px;*/
     height: 110px;
@@ -364,20 +473,15 @@ td{
     padding: 40px;
     line-height: 70px;
     font-size: 30px;
-    margin-top: -190px;
+    margin-top: -100px;
 }
 
-
-.horiz-hate-overlay:hover #overlay{
+.fmovieshor:hover #overlay-hor{
     opacity: 1;
 }
 
-.horiz-like-overlay:hover #overlay{
-    opacity: 1;
-}
-
-#overlay-hor{
-    /*position: absolute;*/
+#overlay{
+    position: absolute;
     /*top: 0;*/
     /*left: 0px;*/
     height: 350px;
@@ -391,10 +495,10 @@ td{
     padding: 20px;
     /*line-height: 10px;*/
     font-size: 30px;
-    margin-top: -190px;
+    margin-top: -100px;
 }
 
-.vertical-like-overlay:hover #overlay-hor{
+.fmoviever:hover #overlay{
     opacity: 1;
 }
 
@@ -445,3 +549,36 @@ td{
 
 /*End of Scroll Bar*/
 
+
+.latest-add {
+    background-color: black;
+    background-image: url("../img/add_icon.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-col-wraper:after {
+    content:"";
+    display: table;
+    clear: both;
+    }
+
+@media screen and (max-width: 1160px) {
+    .friend-activity{
+        float: none;
+        width: 610px;
+        margin: auto;
+    }
+
+    .latest-movies {
+        float: none;
+        width: 410px;
+        margin: 40px auto 0 auto;
+    }
+
+    .right-col-wraper {
+        width: 100%;
+        height: auto;
+    }
+}
